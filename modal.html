@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./CSS/modal.css" />
+  </head>
+  <body>
+    <div class="p-3">
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#myModal"
+      >
+        Launch demo modal
+      </button>
+      <br><br>
+      <div class="alert alert-danger fade show alert-dismissible"><strong>Holly Crap!</strong>you fucking did it again!<button class="btn-close" data-bs-dismiss="alert"></button></div>
+      
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      data-bs-backdrop="static"
+      id="myModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              My Modal Lesson
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae
+              labore voluptatibus consectetur tempore natus facere alias unde!
+              Impedit tempora distinctio quisquam asperiores optio, eos,
+              repudiandae, laboriosam aliquam doloremque aspernatur atque! Lorem
+              ipsum dolor sit amet,
+            </p>
+            <!-- <img src="./Image/n4.jpg" class="w-100" alt="" /> -->
+          </div>
+          <div class="modal-footer">
+            <button class="btn btn-danger">
+              <i class="bi bi-x-lg" data-bs-dismiss="modal"></i>
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

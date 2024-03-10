@@ -1,0 +1,84 @@
+.my-dropdown-content {
+  display: none;
+}
+.my-dropdown-btn:focus + .my-dropdown-content {
+  display: block;
+}
+.counter {
+  counter-reset: selection;
+}
+.counter p::before {
+  counter-increment: selection;
+  content: counter(selection) ".";
+}
+.bg-box {
+  width: 300px;
+  height: 300px;
+  border: 10px solid rgba(0, 0, 0, 0.185);
+  background-image: url(../Image/n4.jpg);
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  padding: 30px;
+  color: white;
+  box-sizing: content-box;
+}
+.name-title {
+  background-image: url(../Image/n3.jpg);
+  color: #ffffff00;
+  font-size: 100px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.name-title2 {
+  background: linear-gradient(pink darkred);
+  background: -webkit-linear-gradient(
+    left bottom,
+    rgb(207, 115, 130),
+    rgb(0, 139, 97)
+  );
+  font-size: 80px;
+  color: #ffffff00;
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.mask {
+  mask-image: url(../Image/n1.jpg);
+  -webkit-mask-image: url(../Image/n1.jpg);
+}
+.gd-box {
+  width: 300px;
+  height: 100px;
+  /* border: 3px solid black; */
+  background-image: linear-gradient(to right, gold 1%, pink);
+}
+.gd-box:hover {
+  background-image: linear-gradient(to bottom, gold 10%, pink);
+}
+.circle-progress {
+  width: 300px;
+  height: 300px;
+  background-image: conic-gradient(
+    rgb(35, 35, 145) 0deg 10deg,
+
+    rgba(5, 90, 40, 0.425) 0deg
+  );
+  border-radius: 50%;
+  position: relative;
+} 
+.circle-progress::before{
+  content: "";
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  background-color: rgb(235, 100, 100);
+  border-radius: 50%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

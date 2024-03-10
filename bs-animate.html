@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css" />
+    <style>
+      h1:hover{
+        animation: jello 1s;
+      }
+      .card:hover{
+        animation: headShake 1s;
+      }
+    </style>
+  </head>
+  <body class="bg-info-subtle p-4">
+    <h1 class="mb-4 text-black-50">Bootstrap & Animated CSS</h1>
+    <div class="card mb-4 animate__animated animate__bounceInLeft  ">
+      <div class="card-body ">
+        <h3 class="card-title">Card 1</h3>
+        <p class="card-text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit quod,
+          aperiam sapiente similique aliquam tempore.
+        </p>
+      </div>
+    </div>
+    <div class="card mb-4 animate__animated animate__bounceInRight animate__slow ">
+        <div class="card-body ">
+          <h3 class="card-title">Card 1</h3>
+          <p class="card-tex">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit quod,
+            aperiam sapiente similique aliquam tempore.
+          </p>
+        </div>
+      </div>
+      <div class="card mb-4 animate__animated animate__bounceInUp animate__slower ">
+        <div class="card-body ">
+          <h3 class="card-title">Card 1</h3>
+          <p class="card-text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit quod,
+            aperiam sapiente similique aliquam tempore.
+          </p>
+        </div>
+      </div>
+  </body>
+</html>

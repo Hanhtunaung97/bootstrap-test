@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
+    <div class="p-4">
+      <form action="" class="bg-info-subtle p-2 rounded">
+        <fieldset>
+          <legend class="text-center">Register Form</legend>
+          <div class="mb-3 form-floating">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control is-valid"
+              placeholder="Enter Your Name"
+            />
+            <span class="valid-feedback">Your name is correct!</span>
+            <label for="name" class="form-label">Name:</label>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input class="form-control" type="email" name="email" id="email" />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password:</label>
+            <input
+              class="form-control"
+              type="password"
+              name="password"
+              id="password"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="photo" class="form-label">Your Photo:</label>
+            <input type="file" name="photo" id="photo" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <label for="language" class="form-label">Select language:</label>
+            <select name="language" class="form-select" id="language">
+              <option value="mm" selected>Myanmar</option>
+              <option value="eng">English</option>
+              <option value="jpn">Japan</option>
+              <option value="kra">Korea</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Gender:</label>
+            <br />
+            <div class="form-check form-check-inline">
+              <input
+                type="radio"
+                name="gender"
+                id="male"
+                class="form-check-input"
+              />
+              <label for="male" class="form-check-label">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                type="radio"
+                name="gender"
+                id="female"
+                class="form-check-input"
+              />
+              <label for="female" class="form-check-label">Female</label>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Select Skill:</label>
+            <br />
+            <div class="form-check form-check-inline">
+              <input
+                type="checkbox"
+                name="skills"
+                id="html"
+                class="form-check-input"
+              />
+              <label for="html" class="form-check-label">HTML</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                type="checkbox"
+                name="skills"
+                id="css"
+                class="form-check-input"
+              />
+              <label for="css" class="form-check-label">CSS</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                type="checkbox"
+                name="skills"
+                id="js"
+                class="form-check-input"
+              />
+              <label for="js" class="form-label">JavaScript</label>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="hr" class="form-label">Working Hours:</label>
+            <input
+              type="range"
+              name="Hours"
+              id="hr"
+              class="form-range"
+              min="0"
+              max="8"
+              step="0.5"
+              value="0"
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Salary:</label>
+            <div class="input-group">
+              <span class="input-group-text"><i class="bi bi-coin"></i></span>
+              <input
+                type="number"
+                name="salary"
+                min="0"
+                id="salary"
+                class="form-control"
+              />
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="text" class="form-label">Address:</label>
+            <textarea
+              name="address"
+              class="form-control"
+              id="text"
+              rows="5"
+            ></textarea>
+          </div>
+          <div class="mb-3">
+            <div class="input-group">
+              <input
+                type="text"
+                name="search"
+                class="form-control is-invalid"
+                id=""
+              />
+              <button class="btn btn-info">Search</button>
+              <span class="invalid-feedback">Something is wrong!</span>
+            </div>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

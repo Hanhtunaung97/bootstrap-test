@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "custom-1";
+    src: url(../fonts/amble/Amble-BoldItalic.ttf);
+}
+@font-face {
+    font-family: "custom-2";
+    src: url(../fonts/alex-brush/AlexBrush-Regular.ttf);
+}
+h1{
+    font-family: "custom-1";
+    
+}
+p{
+    font-family: "custom-2";
+}
+.tooltip{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 10%;
+    position: relative;
+}
+.tooltip .tooltip-text{
+position: absolute;
+width: 100px;
+padding: 5px;
+border-radius: 5px;
+z-index: 1;
+visibility: hidden;
+color: rgba(121, 71, 168, 0.966);
+background-color: black;
+}
+.tooltip:hover .tooltip-text{
+    visibility: visible;
+    top: -110%;
+    right: 5%;
+    position: absolute;
+}

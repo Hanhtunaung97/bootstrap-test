@@ -1,0 +1,152 @@
+.triangle {
+  /* width: 100px;
+    height: 100px;
+    background-color: black; */
+  border: 70px solid transparent;
+  display: inline-block;
+  border-top-width: 5px;
+  border-left-width: 30px;
+  border-right-width: 30px;
+  border-bottom-color: gold;
+}
+.circle {
+  /* width: 100px;
+    height: 100px;
+    background-color: black;
+    border-radius: 50%; */
+  border: 50px solid black;
+  display: inline-block;
+  border-radius: 50%;
+  border-right-color: transparent;
+  position: relative;
+}
+.circle::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  top: -25px;
+}
+.circle2 {
+  border: 50px solid black;
+  display: inline-block;
+  border-radius: 50%;
+  border-left-color: transparent;
+  position: relative;
+}
+.circle2::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  top: -25px;
+}
+.arrow {
+  border: 50px solid black;
+  display: inline-block;
+  border-left-color: transparent;
+  border-right-width: 150px;
+  position: relative;
+}
+.arrow::before {
+  content: "";
+  position: absolute;
+  border: 50px solid transparent;
+  right: -200px;
+  top: -50px;
+  border-right-width: 0px;
+  border-left-color: black;
+}
+.img-box {
+  width: 500px;
+  height: 300px;
+  background-image: url(../Image/1.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.img-box::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  /* background-color: aqua; */
+  opacity: 0.4;
+  background: #ffafbd; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffc3a0,
+    #ffafbd
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffc3a0,
+    #ffafbd
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.img-box::after {
+  content: "My Gi Gi";
+  position: absolute;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: coral;
+  bottom: 5%;
+  z-index: 1;
+  font-weight: 700;
+  font-size: medium;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.check-box {
+  width: 500px;
+  height: 300px;
+  border: 5px solid black;
+  padding: 20px;
+  border-radius: 10px;
+}
+.checkbox-left {
+  max-width: 400px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  margin-bottom: 40px;
+}
+.checkbox-left::before{
+    border: 10px solid black;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    left: 10%;
+}
+.checkbox-right{
+    max-width: 60%;
+    background-color: black;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    margin-left: auto;
+    position: relative;
+    text-align: end;
+
+}
+.checkbox-right::before{
+    border: 10px solid black;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    right: 10%;
+}
+

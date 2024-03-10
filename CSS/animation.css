@@ -1,0 +1,31 @@
+@keyframes myNameAni {
+  0%{
+    transform: translate(0,0);
+  }
+  25%{
+    transform: translateX(200px);
+    font-size: 1em;
+    color: aquamarine;
+  }
+  50%{
+    transform: translate(200px,200px);
+    font-size: 3em;
+    color: gold;
+  }
+  75%{
+    transform: translate(0,200px);
+    font-size: 1em;
+    color: darkblue;
+  }
+  100%{
+    transform: translate(0,0);
+  }
+}
+h1 {
+  animation-name: myNameAni;
+  animation-duration: 5s;
+  animation-delay: 1s;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
